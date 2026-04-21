@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendaftaran Pemintan - JS DOM</title>
+    <link rel="stylesheet" href="style2.css">
+  </head>
+  <body>
+    <center>
+      <div class="container">
+        <div class="header">
+          <h3>Halaman Pesanan</h3>
+        </div>
+
+        <form action="">
+
+          <label for="namaOrg">Nama</label><br />
+          <input
+            type="text"
+            placeholder="Nama anda"
+            id="namaOrg"
+          /><br /><br />
+
+          <label for="noOrg">No Telepon</label><br />
+          <input
+            type="text"
+            placeholder="Nomor anda"
+            id="noOrg"
+          /><br /><br />
+
+          <label for="alamat">Alamat Pengiriman</label><br />
+          <input
+            type="text"
+            placeholder="Alamat anda"
+            id="alamat"
+          /><br /><br />
+
+          <p>Jenis Produk:</p>
+          <input type="radio" name="jenisProduk" id="makanan" value="Makanan" />
+          <label for="makanan">Makanan</label> <br />
+
+          <input type="radio" name="jenisProduk" id="minuman" value="Minuman" />
+          <label for="minuman">Minuman</label> <br />
+
+          <label for="menu">Nama Menu</label><br />
+          <input
+            type="text"
+            placeholder="Menu anda"
+            id="menu"
+          /><br /><br />
+
+          <label for="pesanan">Jumlah Pesanan</label><br />
+          <input
+            type="text"
+            placeholder="Jumlah pesanan"
+            id="pesanan"
+          /><br /><br />
+
+          <!-- input tanggal -->
+          <label for="tglPesan">Tanggal Pemesanan</label><br />
+          <input type="date" id="tglPesan" /><br /><br />
+
+          <!-- textarea utk alamat -->
+          <label for="alamat">Alamat</label><br />
+          <textarea
+            placeholder="Tulis alamatmu di sini"
+            name="alamat"
+            id="alamat"
+            cols="30"
+            rows="5"
+          ></textarea
+          ><br /><br />
+
+          <button type="submit" onclick="alert('Your order is noted!')">Submit</button>
+          
+          <button type="okay" onclick="clearForm()">Okay</button>
+
+        </form>
+      </div>
+    </center>
+
+    </center>
+
+        <div class="home-nav">
+            <a href="index.html" class="btn-home">Home</a>
+        </div>
+
+        <script src="script2.js"></script>
+      </body>
+
+    <script src="script2.js"></script>
+  </body>
+</html>
