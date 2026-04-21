@@ -1,54 +1,49 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praktikum PDW 6</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>Savora Bites</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="overlay">
-            <h1>Spirited Away</h1>
-            <h3>Spirited Away (2001) Film by Hayao Miyazaki</h3>
-            <br>
-            <p>This movie follows Chihiro, a ten-year-old girl who wanders into a magical world of spirits. <br> After her parents are transformed into pigs, she must work in a witch's bathhouse to save them <br> and find a way back home. It is a journey of maturity, identity, and bravery</p>
-        </div>
-    </header>
-
-    <div class="main-content">
-        <div class="media-card" onclick="notify('Video ini format MP4 Lokal!')">
-            <h3>Trailer Spirited Away</h3>
-            <div class="media-wrapper">
-                <video controls src="asset/video/spiritedaway.mp4"></video>
-            </div>
+<div id="home-section" class="section main-container">
+    <div class="welcome-card">
+        <h1>Welcome To Savora Bites!</h1>
+        <p>Made with fresh ingredients and curated with love ✨</p>
+        
+        <div class="button-group">
+            <a href="form/form.html" class="btn">Form</a>
+            <a href="about/gallery.html" class="btn">Gallery</a>
         </div>
 
-        <div class="media-card" onclick="notify('Video ini di-embedded dari YouTube!')">
-            <h3>Movie Review</h3>
-            <div class="media-wrapper">
-                <iframe src="https://www.youtube.com/embed/n5Et9MA8gC8" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
+      <div class="content-box">
+        <h1>Rice Bowl</h1>
+        <p>Made with fresh ingredients</p>
+        
+        <img
+          height="400px" width="300px"
+          src="asset/foto/sweetfin.jpeg"
+          alt="Rice Bowl"
+          class="food1-img"
+        >
 
-        <div class="media-card" onclick="notify('Audio ini format MP3 Lokal!')">
-            <h3>Original Soundtrack</h3>
-            <div class="media-wrapper">
-                <audio controls>
-                    <source src="asset/audio/ost.mp3" type="audio/mp3">
-                </audio>
-            </div>
-        </div>
+        <img
+          height="400px" width="300px"
+          src="asset/foto/ayamgeprek.jpeg"
+          alt="Ayam Geprek"
+          class="food2-img"
+        >
 
-        <div class="media-card" onclick="notify('Gambar ini format PNG Lokal!')">
-            <h3>Poster Film</h3>
-            <div class="media-wrapper">
-                <img src="asset/poster/postersp.png" alt="Movie Poster">
-            </div>
-        </div>
+        <img
+          height="400px" width="300px"
+          src="asset/foto/drinks.jpeg"
+          alt="Refreshing Drinks"
+          class="drinks-img"
+        >
+      </div>
     </div>
-
-    <script src="script.js"></script>
+</div>
 </body>
 </html>
