@@ -1,51 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery</title>
-    <link rel="stylesheet" href="gallery.css"/>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savora Bites</title>
+    <link rel="stylesheet" href="gallery.css">
     <script src="gallery.js" defer></script>
+</head>
+<body>
+<div? id="home-section" class="section main-container">
+    <class="gallery-card">
 
-  </head>
-  <body>
       <div class="content-box">
-          <img
-          height="400px" width="300px"
-          src="1.jpeg"
-          alt="Rice Bowl"
-          class="food5-img"
-        >
+        <h1>Check Out Our Delicious Catalogue ✨</h1>
+        <div class="media-card" onclick="notify('Video ini di-embedded dari YouTube!')">
+            <div class="media-wrapper">
+                <h3>Get 20% Off Your First Order</h3> <br>
 
-        <img
-          height="400px" width="300px"
-          src="2.jpeg"
-          alt="Ayam Geprek"
-          class="food6-img"
-        >
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xPPLbEFbCAo?si=zygl0j8EQHQkA53u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
 
-        <img
-          height="400px" width="300px"
-          src="3.jpeg"
-          alt="Refreshing Drinks"
-          class="drinks2-img"
-        >
-
-        <img
-          height="400px" width="300px"
-          src="4.jpeg"
-          alt="Refreshing Drinks"
-          class="drinks3-img"
-        >
-
-        <img
-          height="400px" width="300px"
-          src="5.jpeg"
-          alt="Refreshing Drinks"
-          class="drinks4-img"
-        >
-
-
+        <div class="media-wrapper">
+            <h3>Our Catalogue</h3>
+          <div class="food-container">
+            <div class="food-item">
+              <img src="acaibowl.jpeg" alt="Acai Bowl">
+            </div> 
+            <div class="food-item">
+              <img src="refeshers.jpeg" alt="Drinks">
+            </div>
+            <div class="food-item">
+              <img src="ricebowl2.jpeg" alt="Scrumptious Bowls">
+            </div>
+            <div class="food-item">
+              <img src="ricebowl3.jpeg" alt="Yummy Bowls">
+            </div>
+            <div class="food-item">
+              <img src="ricebowl4.jpeg" alt="Delicious Bowls">
+            </div>
+            <div class="food-item">
+              <img src="ricebowl5.jpeg" alt="Exquisite Bowls">
+            </div>
+          </div>
+          </div>
       </div>
-  </body>
+    </div>
+    <br>
+      <center>
+        <input type="button" value="Home Page" onclick="history.back()">
+      </center>
+    <script src="gallery.js"></script>
+</div>
+</body>
 </html>

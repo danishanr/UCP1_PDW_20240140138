@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pendaftaran Pemintan - JS DOM</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="form.css">
   </head>
   <body>
     <center>
       <div class="container">
         <div class="header">
-          <h3>Halaman Pesanan</h3>
+          <h2><b>Online Order</b></h2>
         </div>
 
         <form action="">
@@ -34,21 +34,23 @@
             type="text"
             placeholder="Alamat anda"
             id="alamat"
-          /><br /><br />
+          >
 
           <p>Jenis Produk:</p>
           <input type="radio" name="jenisProduk" id="makanan" value="Makanan" />
           <label for="makanan">Makanan</label> <br />
 
           <input type="radio" name="jenisProduk" id="minuman" value="Minuman" />
-          <label for="minuman">Minuman</label> <br />
+          <label for="minuman">Minuman</label>
+          <br /><br />
 
           <label for="menu">Nama Menu</label><br />
           <input
             type="text"
             placeholder="Menu anda"
             id="menu"
-          /><br /><br />
+
+          ><br /><br />
 
           <label for="pesanan">Jumlah Pesanan</label><br />
           <input
@@ -61,34 +63,17 @@
           <label for="tglPesan">Tanggal Pemesanan</label><br />
           <input type="date" id="tglPesan" /><br /><br />
 
-          <!-- textarea utk alamat -->
-          <label for="alamat">Alamat</label><br />
-          <textarea
-            placeholder="Tulis alamatmu di sini"
-            name="alamat"
-            id="alamat"
-            cols="30"
-            rows="5"
-          ></textarea
-          ><br /><br />
-
-          <button type="submit" onclick="alert('Your order is noted!')">Submit</button>
-          
-          <button type="okay" onclick="clearForm()">Okay</button>
-
+          <button type="submit" onclick="kirimData()">Submit</button>
+        
         </form>
       </div>
     </center>
-
+    <br>
+    <center>
+        <input type="button" value="Home Page" onclick="history.back()">
     </center>
-
-        <div class="home-nav">
-            <a href="index.html" class="btn-home">Home</a>
         </div>
 
-        <script src="script2.js"></script>
-      </body>
-
-    <script src="script2.js"></script>
+    <script src="form.js"></script>
   </body>
 </html>

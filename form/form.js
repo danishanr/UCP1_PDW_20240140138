@@ -1,32 +1,34 @@
 function kirimData() {
-  var namaOrg = document.getElementById("namaOrg").value;
-  var noOrg = document.getElementById("noOrg").value;
-  var alamat = document.getElementById("alamat").value;
-  var jenisProduk = document.querySelector("input[name=jenisProduk]:checked"); 
-  var menu = document.getElementById("menu").value;
-  var pesanan = document.getElementById("pesanan").value;
-  var tglPesan = document.getElementById("tglPesan").value;
 
-  if (!namaOrg || !noOrg || !alamat || !menu || !pesanan || !tglPesan ) {
+  event.preventDefault();
+  var nama = document.getElementById("namaOrg").value;
+  var no = document.getElementById("noOrg").value;
+  var alamatPesan = document.getElementById("alamat").value;
+  var jenis = document.querySelector("input[name=jenisProduk]:checked");
+  var menuPesan = document.getElementById("menu").value;
+  var pesan = document.getElementById("pesanan").value;
+  var tanggal = document.getElementById("tglPesan").value;
+
+  if (!nama || !no || !alamatPesan || !menuPesan || !pesan || !tanggal ) {
     alert("Mohon lengkapi semua data.");
     return;
   }
 
-  if (!jenisProduk) {
+  if (!jenis) {
     alert("Mohon pilih salah satu jenis produk.");
     return;
   }
 
-  var nilaijenisProduk = jenisProduk.value;
+  var nilaiJenis = jenis.value;
 
   alert(
-    "Nama : " + namaOrg +
-    "\NNo Telefon : " + noOrg +
-    "\nAlamat : " + alamat +
-    "\nJenis : " + nilaijenisProduk +
-    "\nMenu : " + menu +
-    "\nJumlah : " + pesanan +
-    "\nTanggal : " + tglPesan
+    "Nama : " + nama +
+    "\nNo Telefon : " + no +
+    "\nAlamat : " + alamatPesan +
+    "\nJenis : " + nilaiJenis +
+    "\nMenu : " + menuPesan +
+    "\nJumlah : " + pesan +
+    "\nTanggal : " + tanggal
   );
 
   clearForm();
